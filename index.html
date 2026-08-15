@@ -3688,7 +3688,9 @@ $$\\begin{aligned}
                 else if (q.part === 3) container3.appendChild(card);
             });
         }
-        
+        if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetPromise();
+}
     </script>
 </body>
 </html>
